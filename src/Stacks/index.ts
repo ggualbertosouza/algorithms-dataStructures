@@ -1,62 +1,51 @@
 // Stacks | Pilhas
 
-interface IStack<T> {
-  // Onde vamos armazenar os dados, famoso Storage
-  stack: T[];
+export class Stack<T> {
+  private stack: T[];
+  private total: number;
 
-  // Capacidade máxima de elementos que podem ser armazenados
-  capacity: number;
-
-  // Inserir elemento, apenas 1 por vez
-  insert(element: T): object;
-
-  // Remove elemento
-  remove(): void;
-
-  // Limpa toda a pilha
-  clear(): void;
-
-  // Retorna o elemento do topo da pilha
-  peek(): T;
-
-  // Retorna o tamanho da pilha
-  size(): number;
-}
-
-class Stack<T> implements IStack<T> {
-  stack: T[];
-  capacity: number;
-
-  constructor(capacity: number) {
-    this.capacity = capacity;
+  constructor(total: number) {
+    this.total = total;
     this.stack = [];
   }
 
+  // Insere um elemento na pilha
   insert(element: T): object {
-    if (this.size() >= this.capacity) {
+    // Checa se o tamanho da pilha é maior que a capacidade
+    if (this.size() >= this.total) {
       return {
         message: "Capacidade máxima, não foi possível inserir novo elemento.",
       };
     }
 
+    // Adiciona elemento
     this.stack.push(element);
     return {
       message: "Inserido com sucesso.",
     };
   }
 
+  // Retorna a capacidade máxima de elementos na pilha
+  capacity(): number {
+    return this.total;
+  }
+
+  // Remove o último elemento inserido na pilha
   remove(): void {
     this.stack.pop();
   }
 
+  // Limpa toda a pilha
   clear(): void {
     this.stack = [];
   }
 
+  // Retorna o último elemento inserido na pilha
   peek(): T {
     return this.stack[this.size() - 1];
   }
 
+  // Retorna quantos elementos possuem na pilha
   size(): number {
     return this.stack.length;
   }
