@@ -13,8 +13,8 @@ Instale as dependências do projeto:
   npm install | yarn add | pnpm i
 ```
 
-Para testar as classes que deseja, 
-crie uma nova instância no arquivo test.ts na raíz do projeto e divirta-se.
+**Para testar as classes que deseja, 
+crie uma nova instância no arquivo test.ts na raíz do projeto e divirta-se.**
 
 ## Array
 
