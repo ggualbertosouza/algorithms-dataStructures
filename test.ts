@@ -12,11 +12,6 @@ import { Stack } from "./src/Stacks";
 const stack = new Stack(5);
 
 // Criador
-stack.insert("Guilherme G Souza");
+stack.add("Guilherme G Souza");
 
-console.log(
-    stack, 
-    stack.size(), 
-    stack.peek(), 
-    stack.capacity()
-);
+console.log(stack, stack.size(), stack.peek(), stack.capacity());

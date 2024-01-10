@@ -38,3 +38,14 @@ Imagine realmente uma pilha de pratos, livros,...
 onde o prato que colocar por cima sempre vai ser o primeiro a ser retirado, daí surge "LIFO" (last in, first out). <br/>
 Dê uma olhada no código e entenda como funciona para inserir, remover, olhar, limpar e
 ver o tamanho de uma pilha, lembrando que aqui no código, nossa pilha possui tamanho máximo.
+
+## Queue
+É uma coleção de elemente Ordenados, onde só a uma saída e uma entrada. 
+Como uma fila de um banco, uma pessoa entra e aguarda a sua vez, o atendimento é por ordem de chegada, uma nova pessoa entrará
+na parte de trás da fila. As filas possuem algumas variações, que estará nas próximas estruturas, olhe o código e confirme que 
+entendeu bem como funciona uma fila.
+
+## Deque
+É uma fila com duas saídas e duas entradas. Como em uma fila de cinema, você pode comprar o ingresso e sair da fila e voltar 
+rapidamente para pedir uma informação e sair de novo. Esse tipo de estrutura permite a execução de outras funcionalidades,
+como detectar se uma palavra é um palíndromo.

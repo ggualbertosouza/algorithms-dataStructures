@@ -10,7 +10,7 @@ export class Stack<T> {
   }
 
   // Insere um elemento na pilha
-  insert(element: T): object {
+  add(element: T): object {
     // Checa se o tamanho da pilha é maior que a capacidade
     if (this.size() >= this.total) {
       return {
